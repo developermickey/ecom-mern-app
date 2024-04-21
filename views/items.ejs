@@ -1,0 +1,79 @@
+    <form action="">
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card-body bg-light justify-content-center">
+                        <div class="row">
+                            <div class="col-lg-3 overflow-hidden">
+                                <img src="../images/1.jpg" alt="" style="display: inline-block; height: 15rem;">
+                                <div class="p-4 text-center">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <button type="button" id="edit" class="btn btn-warning py-2">Edit</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="submit" disabled id="submit" class="btn btn-warning py-2">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="name">Product Name</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="Jonhson" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                        <label for="name">Product Description</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="Lorem Ipsum" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                        <label for="name">Product Category</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="Shampoo" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                        <label for="name">Product Brand</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="Jonhson" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="name">Product Quantity</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="20" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                        <label for="name">Product Price</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="$20" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                        <label for="name">Product Size</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="200ML" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                        <label for="name">Product Image</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="../images/1.jpg" name="name" disabled class="form-control f" id="nextSubmit">
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#edit').click(function() {
+                $('.f').removeAttr('disabled');
+                $('#submit').removeAttr('disabled');
+            });
+        });
+    </script>
+
+    <%- include('partials/footer') -%>
